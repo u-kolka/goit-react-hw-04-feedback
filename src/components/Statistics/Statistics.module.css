@@ -1,0 +1,7 @@
+.statistics {
+font-size: 18px;
+}
+
+.statistics__item:not(:last-child) {
+margin-bottom: 10px;
+}

@@ -1,0 +1,44 @@
+.notify__info {
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    border-radius: 10px;
+    background-color: rgb(109, 182, 251);
+
+    animation: notify 2s ease-in-out 1 both;
+}
+
+.notify__info::before {
+    content: '';
+    display: inline-block;
+    width: 32px;   
+    height: 32px;
+    margin-right: 10px;
+    background-image: url(../../../public/icon-info.svg);
+    background-size: contain;
+}
+
+@keyframes notify {
+    0% {
+        transform: scaleX(0);
+    }
+
+    25% {
+        transform: scaleX(1);
+    }
+
+    50% {
+        transform: scaleX(1);
+    }
+
+    75% {
+        transform: scaleX(1);
+    }
+
+    100% {
+        transform: scaleX(0);
+    }
+}
